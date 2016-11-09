@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.quiz-title {
+  font-size: 3em;
+}
+
+.question {
+  background-color: #7FDBFF;
+}
+
+.question-title {
+  margin-top: 0;
+  font-size: 1.5em;
+  background-color: #001f3f;
+  color: white;
+}
+
+.answer {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  text-align: left;
+  margin-left: 50px;
+  color: black;
+  align-items: center;
+}
+
+.answer-title {
+  width: 90%;
+}
+
+.answer-checkbox {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
