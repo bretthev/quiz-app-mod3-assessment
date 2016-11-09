@@ -34,7 +34,7 @@ export default class Quiz extends Component {
           {quiz.quizzes ? quiz.quizzes[0].title : 'Loading your quiz.'}
         </h1>
         {quiz.quizzes ?  map(quiz.quizzes[0].questions, (question, i) => {
-          return <Question key={Math.random()} {...question} />
+          return <Question key={question.id} {...question} />
         }): ''}
       </section>
     )
