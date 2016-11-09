@@ -3,8 +3,9 @@ import Answer from './AnswerComponent';
 import { map } from 'lodash';
 
 const Question = ( question ) => {
-  const renderAnswers = map(question.answers, (answer) => {
-      return <Answer key={answer.id} {...answer} /> })
+
+  const renderAnswers = map(question.answers, (answer, index) => {
+      return <Answer key={index} {...answer} /> })
   return (
     <section className="question" key={question.id}>
       <h1 className="question-title">{question.title}</h1>
